@@ -18,7 +18,7 @@ function dateCalcNow(){
 // Compute Time Until an Event
 function dateCalcDiff() {
      var d = new Date();
-     var myDate =  new Date(2021, 4, 25, 12, 30, 0);
+     var myDate =  new Date(2022, 5, 14, 3, 15, 0);
      document.getElementById("nowDate").innerHTML = '<h3 style="border:2px solid Blue;">' + "Target Date is : " + myDate.toString() + "</h3>";
      // There are 1,000 milliseconds in a second
      const millisecDay = 86400000;
