@@ -4,13 +4,13 @@
 // Get and display current time
 function dateCalcNow(){
     var d = new Date();
-    var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     document.getElementById("nowDate").innerHTML = '<h3 style="border:2px solid Red;">' + "Present Date & Time : " + d.toString() + "</h3>";
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getTime();
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
     var timeStringNew = timeString(d);
     document.getElementById("nowTime").innerHTML = "Time :   " + timeStringNew;
-    document.getElementById("nowMonth").innerHTML = "Month : " + monthNames(d.getMonth());
+    document.getElementById("nowMonth").innerHTML = "Month : " + month[d.getMonth()];
     document.getElementById("nowDay").innerHTML = "Day : " + d.getDate();
     document.getElementById("nowYear").innerHTML = "Year : " + d.getFullYear();
 }
