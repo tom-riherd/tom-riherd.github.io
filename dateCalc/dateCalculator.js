@@ -4,6 +4,7 @@ var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","N
 // Get and display current time
 function dateCalcNow(){
     var d = new Date();
+    global monthNames;
     document.getElementById("nowDate").innerHTML = '<h3 style="border:2px solid Red;">' + "Present Date & Time : " + d.toString() + "</h3>";
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getTime();
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
