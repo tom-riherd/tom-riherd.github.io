@@ -1,10 +1,10 @@
 // External JavaScript File to obtain value and compute date values
-var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
 
 // Get and display current time
 function dateCalcNow(){
     var d = new Date();
-    global monthNames;
+    var monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     document.getElementById("nowDate").innerHTML = '<h3 style="border:2px solid Red;">' + "Present Date & Time : " + d.toString() + "</h3>";
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getTime();
     // document.getElementById("nowTime").innerHTML = "Time : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
